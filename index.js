@@ -47,8 +47,28 @@ run(10 , 20 , 30)
 
 // dot(... arr)
 
-function foo(...args){
-    console.log(args[3])
+// function foo(...args){
+//     console.log(args[3])
+// }
+// var arr = [1, 2, 3, 4, 5]
+// foo(...arr)
+
+function foo(x, y, z, ...args){
+    return console.log (x, y, z, args)
 }
-var arr = [1, 2, 3, 4, 5]
-foo(...arr)
+foo(1, 2, 3, 4, 5, 6, 7)
+
+function asd(...args){
+    console.log(args[5])
+}
+var arr = [1, 2, 3, 4, 5, 6, 7]
+asd(...arr)
+
+//code setup as example 
+
+
+
+function apple(a , s , d , f , ...args){
+   return console.log(a , s , d , f , ...args)
+}
+apple(1, 2, 3, 4, 5, 6, 7, 8, 9)
